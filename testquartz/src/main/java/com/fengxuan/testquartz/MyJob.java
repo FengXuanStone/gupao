@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class MyJob implements Job {
+
+    @Override
     public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
 //        JobKey key = jobExecutionContext.getJobDetail().getKey();
 //
@@ -27,8 +29,8 @@ public class MyJob implements Job {
 
         String jobSays = dataMap.getString("jobSays");
         float myFloatValue = dataMap.getFloat("myFloatValue");
-        ArrayList state = (ArrayList)dataMap.get("myStateData");
-        state.add(new Date());
+//        ArrayList state = (ArrayList)dataMap.get("myStateData");
+//        state.add(new Date());
 
         System.err.println("Instance " + key + " of DumbJob says: " + jobSays + ", and val is: " + myFloatValue);
 

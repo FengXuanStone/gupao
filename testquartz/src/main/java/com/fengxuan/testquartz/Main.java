@@ -1,5 +1,6 @@
 package com.fengxuan.testquartz;
 
+import org.quartz.CronScheduleBuilder;
 import org.quartz.JobBuilder;
 import org.quartz.JobDetail;
 import org.quartz.Scheduler;
@@ -17,7 +18,6 @@ public class Main {
         Scheduler sched = schedFact.getScheduler();
 
         sched.start();
-
         // define the job and tie it to our HelloJob class
         JobDetail job = JobBuilder.newJob(MyJob.class)
                 .withIdentity("myJob", "group1")
@@ -29,9 +29,8 @@ public class Main {
         Trigger trigger = newTrigger()
                 .withIdentity("myTrigger", "group1")
                 .startNow()
-                .withSchedule(simpleSchedule()
-                        .withIntervalInSeconds(3)
-                        .repeatForever())
+                // 两秒执行一次
+                .withSchedule(CronScheduleBuilder.cronSchedule("0/2 * * * * ?"))
                 .build();
 
         // Tell quartz to schedule the job using our trigger
