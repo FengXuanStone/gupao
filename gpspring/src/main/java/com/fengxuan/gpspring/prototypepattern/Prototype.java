@@ -1,4 +1,5 @@
 package com.fengxuan.gpspring.prototypepattern;
 
-public class Prototype {
+public interface Prototype {
+    Prototype clone();
 }
