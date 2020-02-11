@@ -23,6 +23,15 @@ public class CourseFactory {
 //
 //        return null;
 //    }
+//
+//    public static ICourse create(Class<? extends ICourse> clazz) {
+//        try {
+//            return clazz.newInstance();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        return null;
+//    }
 
     public static ICourse create(Class<? extends ICourse> clazz) {
         try {
@@ -30,6 +39,7 @@ public class CourseFactory {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
         return null;
     }
 }

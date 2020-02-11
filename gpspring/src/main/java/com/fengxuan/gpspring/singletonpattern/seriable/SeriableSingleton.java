@@ -1,4 +1,4 @@
-package com.fengxuan.gpspring.singletonpattern;
+package com.fengxuan.gpspring.singletonpattern.seriable;
 
 import java.io.Serializable;
 

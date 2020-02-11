@@ -1,4 +1,4 @@
-package com.fengxuan.gpspring.singletonpattern;
+package com.fengxuan.gpspring.singletonpattern.lazy;
 
 import java.lang.reflect.Constructor;
 

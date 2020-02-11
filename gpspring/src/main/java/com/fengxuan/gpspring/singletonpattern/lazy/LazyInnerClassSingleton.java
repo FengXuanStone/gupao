@@ -1,4 +1,4 @@
-package com.fengxuan.gpspring.singletonpattern;
+package com.fengxuan.gpspring.singletonpattern.lazy;
 
 public class LazyInnerClassSingleton {
     //使用lazyInnerClassGeneral的时候，默认会先初始化内部类

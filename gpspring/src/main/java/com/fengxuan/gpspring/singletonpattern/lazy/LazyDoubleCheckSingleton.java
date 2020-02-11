@@ -1,4 +1,4 @@
-package com.fengxuan.gpspring.singletonpattern;
+package com.fengxuan.gpspring.singletonpattern.lazy;
 
 public class LazyDoubleCheckSingleton {
     private volatile static LazyDoubleCheckSingleton lazy = null;

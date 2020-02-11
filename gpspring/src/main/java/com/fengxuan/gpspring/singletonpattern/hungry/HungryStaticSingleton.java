@@ -1,4 +1,4 @@
-package com.fengxuan.gpspring.singletonpattern;
+package com.fengxuan.gpspring.singletonpattern.hungry;
 
 public class HungryStaticSingleton {
     private static final HungryStaticSingleton hungryStaticSingleton;

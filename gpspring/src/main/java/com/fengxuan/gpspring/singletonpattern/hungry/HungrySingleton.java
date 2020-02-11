@@ -1,4 +1,4 @@
-package com.fengxuan.gpspring.singletonpattern;
+package com.fengxuan.gpspring.singletonpattern.hungry;
 
 public class HungrySingleton {
     //先静态，后动态

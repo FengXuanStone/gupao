@@ -1,4 +1,4 @@
-package com.fengxuan.gpspring.singletonpattern;
+package com.fengxuan.gpspring.singletonpattern.register;
 
 public enum EnumSingleton {
     INSTANCE;
