@@ -13,6 +13,7 @@ public class GPClassLoader extends ClassLoader{
         this.classPathFile = new File(classPath);
     }
 
+    @Override
     protected Class<?> findClass(String name) throws ClassNotFoundException {
         String className = GPClassLoader.class.getPackage().getName() + "." + name;
 
